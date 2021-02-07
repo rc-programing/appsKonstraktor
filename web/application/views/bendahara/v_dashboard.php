@@ -27,7 +27,7 @@
                             <p><?= format_rupiah($debit); ?></p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-bag"></i>
+                            <i class="fas fa-luggage-cart"></i>
                         </div>
                         <a href="<?= site_url('page/data_saldo'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
@@ -42,7 +42,7 @@
                             <p><?= format_rupiah($kredit); ?></p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
+                            <i class="fas fa-chart-bar"></i>
                         </div>
                         <a href="<?= site_url('page/data_pengeluaran'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
@@ -57,7 +57,7 @@
                             <p><?= format_rupiah($sisa_saldo); ?></p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
+                            <i class="fas fa-chart-pie"></i>
                         </div>
                         <a href="<?= site_url('page/data_saldo'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
@@ -71,7 +71,7 @@
                             <p><?= $pengeluaran; ?></p>
                         </div>
                         <div class="icon">
-                            <i class="ion ion-person-add"></i>
+                            <i class="fas fa-user-plus"></i>
                         </div>
                         <a href="<?= site_url('page/data_pengeluaran'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>

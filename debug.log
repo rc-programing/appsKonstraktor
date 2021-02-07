@@ -1161,3 +1161,369 @@
 - 22:27:25.156 DEBUG: OnBrowserDestroyed()
 - 22:27:26.468 INFO: Ended application
 - 22:27:26.468 INFO: --------------------------------------------------------
+- 22:28:48.000 INFO: --------------------------------------------------------
+- 22:28:48.000 INFO: Started application
+- 22:28:48.000 INFO: Logging to: G:\PROJEK\Isna Projek\appsKonstraktor\debug.log
+- 22:28:48.000 INFO: Log level = DEBUG4
+- 22:28:48.000 INFO: Starting Mongoose 3.9c web server
+- 22:28:48.000 INFO: WWW directory: G:\PROJEK\Isna Projek\appsKonstraktor\web
+- 22:28:48.000 INFO: Index files: index.html,index.php
+- 22:28:48.000 INFO: CGI interpreter: G:\PROJEK\Isna Projek\appsKonstraktor\php\php-cgi.exe
+- 22:28:48.000 INFO: CGI pattern: **.php$
+- 22:28:48.000 INFO: Hide files patterns: 
+- 22:28:48.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\HARIYA~1\AppData\Local\Temp\
+- 22:28:48.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 22:28:48.016 INFO: Web server url: http://127.0.0.1:54381/
+- 22:28:48.016 INFO: remote_debugging_port = 53059
+- 22:28:48.016 DEBUG: Command line string for the browser process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --remote-debugging-port=53059
+- 22:28:48.094 DEBUG: App::OnContextInitialized()
+- 22:28:48.094 DEBUG: Window max width/height = 1286/680
+- 22:28:48.094 DEBUG: GetBrowserWindow(): not found, hwnd = 4915812
+- 22:28:48.094 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 22:28:48.109 DEBUG: BrowserWindow::CreateBrowserControl()
+- 22:28:48.109 DEBUG: StoreBrowserWindow(): hwnd = 4915812
+- 22:28:48.188 DEBUG: ClientHandler::OnAfterCreated()
+- 22:28:48.203 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 22:28:48.219 DEBUG: OnLoadingStateChange: loading=1, url=
+- 22:28:48.000 DEBUG: Command line string for the gpu-process process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0046 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2900 --gpu-driver-date=11-26-2012 --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --service-request-channel-token=4DBA7EEDF999C6332711C38D0CB2B0CE --mojo-platform-channel-handle=1776 /prefetch:2
+[0207/222848.689:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 22:28:48.000 DEBUG: Command line string for the renderer process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=renderer --no-sandbox --primordial-pipe-token=BABCC1EC3E183C4384B9142421C25D97 --lang=en-US --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=BABCC1EC3E183C4384B9142421C25D97 --renderer-client-id=3 --mojo-platform-channel-handle=2340 /prefetch:1
+- 22:28:48.031 DEBUG: OnBrowserCreated()
+- 22:28:50.531 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:28:50.531 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:28:50.531 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:28:50.531 INFO: GET 200 /assets/custom/style.min.css
+- 22:28:50.547 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:28:50.547 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:28:50.969 DEBUG: OnContextCreated()
+- 22:28:50.609 INFO: GET 200 /
+- 22:28:51.844 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:28:51.844 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:28:51.844 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:28:51.844 INFO: GET 200 /assets/custom/auth.min.js
+- 22:28:51.844 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:28:51.531 INFO: GET 200 /assets/img/bg_login.png
+- 22:28:51.531 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:28:51.531 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:28:52.781 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/
+[0207/223028.233:WARNING:dns_config_service_win.cc(661)] Failed to read DnsConfig.
+- 22:45:59.078 INFO: POST 200 /auth/login
+- 22:45:59.109 INFO: POST 200 /auth/login
+- 22:45:59.344 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/
+- 22:46:00.078 INFO: GET 200 /page
+- 22:46:00.687 DEBUG: OnContextCreated()
+- 22:46:01.813 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:46:01.828 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:46:01.828 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:46:01.844 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:46:01.906 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:46:01.344 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:46:01.406 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:46:01.422 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:46:01.422 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:46:01.438 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:46:01.438 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:46:03.000 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:46:03.016 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:46:03.016 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:46:03.078 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:46:03.359 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:46:04.734 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:46:04.766 INFO: GET 200 /assets/custom/script.min.js
+- 22:46:04.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:47:24.875 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:47:24.203 INFO: GET 200 /page
+- 22:47:24.625 DEBUG: OnContextCreated()
+- 22:47:24.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:47:46.422 DEBUG: F5 pressed, reloading page
+- 22:47:46.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:47:47.375 DEBUG: OnContextCreated()
+- 22:47:47.016 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:47:47.016 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:47:47.016 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:47:47.031 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:47:47.031 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:47:47.031 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:47:47.047 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:47:47.078 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:47:47.078 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:47:47.094 INFO: GET 200 /assets/custom/style.min.css
+- 22:47:47.172 INFO: GET 200 /page
+- 22:47:47.328 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:47:47.641 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:47:48.922 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:47:48.172 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:47:48.188 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:47:48.188 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:47:48.188 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:47:48.188 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:47:48.188 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:47:48.203 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:47:48.219 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:47:48.422 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:47:48.688 INFO: GET 200 /assets/custom/script.min.js
+- 22:47:49.719 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:47:49.734 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:47:49.953 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:47:49.109 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:47:49.141 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:47:49.141 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:47:49.531 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:47:51.313 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:49:47.500 DEBUG: F5 pressed, reloading page
+- 22:49:47.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:49:47.078 DEBUG: OnContextCreated()
+- 22:49:47.688 INFO: GET 200 /page
+- 22:49:47.688 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:49:47.688 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:49:47.688 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:49:47.688 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:49:47.688 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:49:47.688 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:49:48.703 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:49:48.703 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:49:48.703 INFO: GET 200 /assets/custom/style.min.css
+- 22:49:48.703 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:49:48.828 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:49:48.000 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:49:48.203 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:49:48.297 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:49:48.313 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:49:48.313 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:49:48.313 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:49:48.313 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:49:48.313 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:49:48.313 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:49:48.328 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:49:48.516 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:49:48.531 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:49:48.531 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:49:48.531 INFO: GET 200 /assets/custom/script.min.js
+- 22:49:49.766 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:49:49.781 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:49:49.781 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:49:49.781 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:49:49.781 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:49:50.828 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:50:55.578 DEBUG: F5 pressed, reloading page
+- 22:50:55.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:50:56.234 DEBUG: OnContextCreated()
+- 22:50:56.828 INFO: GET 200 /page
+- 22:50:56.844 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:50:56.844 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:50:56.844 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:50:56.844 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:50:56.844 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:50:56.844 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:50:56.859 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:50:56.859 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:50:56.859 INFO: GET 200 /assets/custom/style.min.css
+- 22:50:56.859 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:50:56.922 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:50:56.109 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:50:56.328 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:50:56.406 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:50:56.406 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:50:56.500 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:50:56.594 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:50:56.594 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:50:56.594 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:50:56.641 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:50:57.703 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:50:57.766 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:50:57.781 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:50:57.828 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:50:57.844 INFO: GET 200 /assets/custom/script.min.js
+- 22:50:57.844 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:50:57.844 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:50:58.328 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:50:58.359 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:50:58.359 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:50:58.594 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:53:00.531 DEBUG: F5 pressed, reloading page
+- 22:53:00.547 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:53:01.562 DEBUG: OnContextCreated()
+- 22:53:01.188 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:53:01.188 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:53:01.188 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:53:01.188 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:53:01.188 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:53:01.203 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:53:01.203 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:53:01.203 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:53:01.203 INFO: GET 200 /assets/custom/style.min.css
+- 22:53:01.219 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:53:01.219 INFO: GET 200 /page
+- 22:53:01.313 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:53:01.563 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:53:02.750 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:53:02.813 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:53:02.828 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:53:02.906 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:53:02.984 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:53:02.984 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:53:02.000 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:53:02.000 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:53:02.078 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:53:02.125 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:53:02.141 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:53:02.172 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:53:02.188 INFO: GET 200 /assets/custom/script.min.js
+- 22:53:02.188 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:53:02.203 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:53:03.141 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:53:03.203 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:53:03.219 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:53:03.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:53:07.234 DEBUG: F5 pressed, reloading page
+- 22:53:07.234 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:53:07.844 DEBUG: OnContextCreated()
+- 22:53:07.453 INFO: GET 200 /page
+- 22:53:07.453 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:53:07.453 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:53:07.453 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:53:07.469 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:53:07.469 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:53:07.469 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:53:07.469 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:53:07.469 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:53:07.469 INFO: GET 200 /assets/custom/style.min.css
+- 22:53:07.484 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:53:07.516 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:53:07.641 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:53:08.828 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:53:08.922 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:53:08.922 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:53:08.016 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:53:08.078 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:53:08.094 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:53:08.094 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:53:08.094 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:53:08.172 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:53:08.250 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:53:08.250 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:53:08.297 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:53:08.297 INFO: GET 200 /assets/custom/script.min.js
+- 22:53:08.297 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:53:08.313 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:53:09.125 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:53:09.156 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:53:09.156 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:53:09.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:53:17.563 DEBUG: F5 pressed, reloading page
+- 22:53:17.563 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:53:18.250 DEBUG: OnContextCreated()
+- 22:53:18.844 INFO: GET 200 /page
+- 22:53:18.859 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:53:18.859 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:53:18.859 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:53:18.859 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:53:18.859 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:53:18.859 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:53:18.875 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:53:18.875 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:53:18.875 INFO: GET 200 /assets/custom/style.min.css
+- 22:53:18.875 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:53:18.875 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:53:18.063 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:53:18.281 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:53:18.359 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:53:18.359 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:53:18.500 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:53:18.625 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:53:18.641 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:53:18.641 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:53:18.656 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:53:19.797 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:53:19.906 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:53:19.906 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:53:19.000 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:53:19.000 INFO: GET 200 /assets/custom/script.min.js
+- 22:53:19.016 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:53:19.016 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:53:21.781 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:53:21.797 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:53:21.797 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:53:21.047 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:53:26.953 DEBUG: F5 pressed, reloading page
+- 22:53:26.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:53:26.765 DEBUG: OnContextCreated()
+- 22:53:26.359 INFO: GET 200 /page
+- 22:53:26.375 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:53:26.391 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:53:26.391 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:53:26.391 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:53:26.391 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:53:26.391 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:53:26.406 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:53:26.406 INFO: GET 200 /assets/custom/style.min.css
+- 22:53:26.406 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:53:26.422 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:53:26.578 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:53:27.906 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:53:27.297 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:53:27.313 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:53:27.313 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:53:27.313 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:53:27.313 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:53:27.313 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:53:27.406 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:53:27.578 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:53:27.578 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:53:27.578 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:53:27.578 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:53:27.578 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:53:27.578 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:53:27.578 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:53:27.594 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:53:27.594 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:53:28.750 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:53:28.859 INFO: GET 200 /assets/custom/script.min.js
+- 22:53:28.984 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:54:09.094 DEBUG: F5 pressed, reloading page
+- 22:54:09.094 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:54381/page
+- 22:54:09.875 DEBUG: OnContextCreated()
+- 22:54:09.469 INFO: GET 200 /page
+- 22:54:09.469 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:54:09.469 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:54:09.469 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:54:09.469 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:54:09.469 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:54:09.469 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:54:09.484 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:54:09.484 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:54:09.484 INFO: GET 200 /assets/custom/style.min.css
+- 22:54:09.484 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:54:09.547 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:54:09.703 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:54:10.719 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:54:10.719 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:54:10.719 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:54:10.719 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:54:10.719 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:54:10.922 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:54:10.094 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:54:10.172 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:54:10.172 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:54:10.172 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:54:10.172 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:54:10.188 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:54:10.188 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:54:10.188 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:54:10.188 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:54:10.328 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:54:10.500 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:54:10.500 INFO: GET 200 /assets/custom/script.min.js
+- 22:54:11.141 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:54381/page
+- 22:54:26.531 DEBUG: WM_DESTROY
+- 22:54:26.531 DEBUG: RemoveBrowserWindow(): hwnd = 4915812
+- 22:54:26.531 INFO: Stopping Mongoose web server
+- 22:54:26.531 DEBUG: Mongoose webserver stopped immediately
+- 22:54:26.547 DEBUG: OnBeforeClose() hwnd=1769614
+- 22:54:26.547 DEBUG: RemoveBrowserWindow(): hwnd = 1769614
+- 22:54:26.547 DEBUG: GetBrowserWindow(): not found, hwnd = 1769614
+- 22:54:26.547 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 22:54:26.547 DEBUG: Calling CefQuitMessageLoop()
+- 22:54:27.344 DEBUG: OnBrowserDestroyed()
+- 22:54:28.000 INFO: Ended application
+- 22:54:28.000 INFO: --------------------------------------------------------

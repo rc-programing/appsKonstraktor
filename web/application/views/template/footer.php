@@ -224,6 +224,8 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+<!-- pace-progress -->
+<script src="<?= base_url('assets/plugins/pace-progress/pace.min.js'); ?>"></script>
 <!-- Select2 -->
 <script src="<?= base_url('assets/plugins/select2/js/select2.full.min.js'); ?>"></script>
 <!-- DataTables -->
@@ -238,7 +240,7 @@
 <!-- Toastr -->
 <script src="<?= base_url('assets/plugins/toastr/toastr.min.js'); ?>"></script>
 <!-- AdminLTE App -->
-<script src="<?= base_url('assets/dist/js/adminlte.js'); ?>"></script>
+<script src="<?= base_url('assets/dist/js/adminlte.min.js'); ?>"></script>
 <script src="<?= base_url('assets/dist/js/axio.min.js'); ?>"></script>
 <script src="<?= base_url('assets/custom/script.min.js'); ?>"></script>
 

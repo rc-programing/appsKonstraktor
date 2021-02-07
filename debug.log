@@ -1527,3 +1527,100 @@
 - 22:54:27.344 DEBUG: OnBrowserDestroyed()
 - 22:54:28.000 INFO: Ended application
 - 22:54:28.000 INFO: --------------------------------------------------------
+- 22:55:26.000 INFO: --------------------------------------------------------
+- 22:55:26.000 INFO: Started application
+- 22:55:26.000 INFO: Logging to: G:\PROJEK\Isna Projek\appsKonstraktor\debug.log
+- 22:55:26.000 INFO: Log level = DEBUG4
+- 22:55:26.000 INFO: Starting Mongoose 3.9c web server
+- 22:55:26.000 INFO: WWW directory: G:\PROJEK\Isna Projek\appsKonstraktor\web
+- 22:55:26.000 INFO: Index files: index.html,index.php
+- 22:55:26.000 INFO: CGI interpreter: G:\PROJEK\Isna Projek\appsKonstraktor\php\php-cgi.exe
+- 22:55:26.000 INFO: CGI pattern: **.php$
+- 22:55:26.000 INFO: Hide files patterns: 
+- 22:55:26.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\HARIYA~1\AppData\Local\Temp\
+- 22:55:26.000 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 22:55:26.016 INFO: Web server url: http://127.0.0.1:52652/
+- 22:55:26.016 INFO: remote_debugging_port = 49382
+- 22:55:26.016 DEBUG: Command line string for the browser process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --remote-debugging-port=49382
+- 22:55:26.094 DEBUG: App::OnContextInitialized()
+- 22:55:26.094 DEBUG: Window max width/height = 1286/680
+- 22:55:26.094 DEBUG: GetBrowserWindow(): not found, hwnd = 4523590
+- 22:55:26.094 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 22:55:26.094 DEBUG: BrowserWindow::CreateBrowserControl()
+- 22:55:26.094 DEBUG: StoreBrowserWindow(): hwnd = 4523590
+- 22:55:26.297 DEBUG: ClientHandler::OnAfterCreated()
+- 22:55:26.297 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 22:55:26.000 DEBUG: Command line string for the gpu-process process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0046 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2900 --gpu-driver-date=11-26-2012 --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --service-request-channel-token=2014C55C3DE384A6510475421CBD024F --mojo-platform-channel-handle=1764 /prefetch:2
+[0207/225527.007:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 22:55:27.453 DEBUG: OnLoadingStateChange: loading=1, url=
+- 22:55:27.000 DEBUG: Command line string for the renderer process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=renderer --no-sandbox --primordial-pipe-token=0F2B726DC92D70084A57C5435F60AEB7 --lang=en-US --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=0F2B726DC92D70084A57C5435F60AEB7 --renderer-client-id=3 --mojo-platform-channel-handle=2356 /prefetch:1
+- 22:55:27.047 DEBUG: OnBrowserCreated()
+- 22:55:27.047 DEBUG: renderer[1] OnProcessMessageReceived: SetIsFullscreen
+- 22:55:29.641 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 22:55:29.641 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 22:55:29.641 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 22:55:29.641 INFO: GET 200 /assets/custom/style.min.css
+- 22:55:29.641 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 22:55:29.656 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 22:55:29.859 DEBUG: OnContextCreated()
+- 22:55:29.719 INFO: GET 200 /
+- 22:55:29.969 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 22:55:29.969 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 22:55:29.969 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 22:55:29.969 INFO: GET 200 /assets/dist/js/axio.min.js
+- 22:55:29.969 INFO: GET 200 /assets/custom/auth.min.js
+- 22:55:31.516 INFO: GET 200 /assets/img/bg_body.jpg
+- 22:55:31.516 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 22:55:31.531 INFO: GET 200 /assets/img/bg_login.png
+- 22:55:31.844 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52652/
+- 22:55:45.516 INFO: POST 200 /auth/login
+- 22:55:45.531 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52652/
+- 22:55:45.031 DEBUG: OnContextCreated()
+- 22:55:45.828 INFO: GET 200 /page
+- 22:55:45.844 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 22:55:45.844 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 22:55:45.844 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 22:55:45.844 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 22:55:45.844 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 22:55:45.922 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 22:55:45.922 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 22:55:45.922 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 22:55:45.922 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 22:55:45.922 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 22:55:45.922 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 22:55:46.437 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 22:55:46.469 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 22:55:46.469 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 22:55:46.469 INFO: GET 200 /assets/custom/script.min.js
+- 22:55:46.875 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 22:55:46.875 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 22:55:46.875 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 22:55:47.891 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52652/page
+- 22:55:50.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52652/page
+- 22:55:50.422 DEBUG: OnContextCreated()
+- 22:55:50.219 INFO: GET 200 /page/data_pengeluaran
+- 22:55:51.094 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52652/page/data_pengeluaran
+- 22:55:54.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52652/page/data_pengeluaran
+- 22:55:54.156 DEBUG: OnContextCreated()
+- 22:55:54.953 INFO: GET 200 /page/cetak_harian
+- 22:55:54.359 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52652/page/cetak_harian
+- 22:55:56.625 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52652/page/cetak_harian
+- 22:55:56.109 DEBUG: OnContextCreated()
+- 22:55:56.922 INFO: GET 200 /page/backup
+- 22:55:56.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52652/page/backup
+- 22:56:02.859 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:52652/page/backup
+- 22:56:02.281 DEBUG: OnContextCreated()
+- 22:56:02.109 INFO: GET 200 /page/data_saldo
+- 22:56:03.422 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:52652/page/data_saldo
+- 22:56:18.953 DEBUG: WM_DESTROY
+- 22:56:18.953 DEBUG: RemoveBrowserWindow(): hwnd = 4523590
+- 22:56:18.953 INFO: Stopping Mongoose web server
+- 22:56:18.953 DEBUG: Mongoose webserver stopped immediately
+- 22:56:18.969 DEBUG: OnBeforeClose() hwnd=591558
+- 22:56:18.969 DEBUG: RemoveBrowserWindow(): hwnd = 591558
+- 22:56:18.969 DEBUG: GetBrowserWindow(): not found, hwnd = 591558
+- 22:56:18.969 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 22:56:18.969 DEBUG: Calling CefQuitMessageLoop()
+- 22:56:18.203 DEBUG: OnBrowserDestroyed()
+- 22:56:18.266 INFO: Ended application
+- 22:56:18.266 INFO: --------------------------------------------------------

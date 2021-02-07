@@ -10,7 +10,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free/css/all.min.css'); ?>">
     <!-- pace-progress -->
-    <link rel="stylesheet" href="<?= base_url('assets/plugins/pace-progress/themes/black/pace-theme-flat-top.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css'); ?>">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- iCheck -->

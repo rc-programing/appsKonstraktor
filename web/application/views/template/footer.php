@@ -99,7 +99,7 @@
                                 <label for="statusSaldo" class="col-sm-3 col-form-label text-right">Status :</label>
                                 <div class="col-sm-9">
                                     <div class="icheck-primary">
-                                        <input type="checkbox" id="statusSaldo" name="statusSaldo" value="1">
+                                        <input type="checkbox" id="statusSaldo" name="statusSaldo" value="3">
                                         <label for="statusSaldo">
                                             Saldo Lainnya (optional)
                                         </label>
@@ -244,6 +244,19 @@
 <script src="<?= base_url('assets/dist/js/axio.min.js'); ?>"></script>
 <script src="<?= base_url('assets/custom/script.min.js'); ?>"></script>
 
+<!-- Users Javascript -->
+<?php if ($this->uri->segment(2) == "data_pengeluaran") : ?>
+    <script src="<?= base_url('assets/custom/pengeluaranJs/outs.min.js'); ?>"></script>
+<?php endif; ?>
+
+<?php if ($this->uri->segment(2) == "data_saldo") : ?>
+    <script src="<?= base_url('assets/custom/saldoJs/ins.min.js'); ?>"></script>
+<?php endif; ?>
+
+<?php $segment = ["backup", "cetak_harian", "searching"];
+if (in_array($this->uri->segment(2),  $segment)) : ?>
+    <script src="<?= base_url('assets/custom/utilitisJs/utilitis.min.js'); ?>"></script>
+<?php endif; ?>
 </body>
 
 </html>

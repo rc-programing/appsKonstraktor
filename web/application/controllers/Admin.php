@@ -18,29 +18,25 @@ class Admin extends CI_Controller
     # saldo ===>
     private function updateSisaSaldo()
     {
+        $today = date('Y-m-d');
         $totalKredit = 0;
-        $checkPengeluaran = $this->model_admin->getPengeluaranTanggal(TODAY);
+        $totalSaldo = 0;
+        $checkPengeluaran = $this->model_admin->getPengeluaranTanggal($today);
+        $checkSaldo = $this->model_admin->getSaldoTanggal($today);
+
         if ($checkPengeluaran->num_rows() > 0) {
-            foreach ($checkPengeluaran->result_array() as $row) {
-                $totalKredit += (int) $row['total'];
-            }
+            $kredit = $this->model_admin->getSUMPengeluaran($today)->result_array();
+            $totalKredit = $kredit[0]['total'];
         }
 
-        $checkSaldo = $this->model_admin->getSaldoTanggal(TODAY);
         if ($checkSaldo->num_rows() > 0) {
-            $totalSaldo = 0;
-            foreach ($checkSaldo->result_array() as $row) {
-                if ($row['status_saldo'] != 999) {
-                    $totalSaldo += (int) $row['saldo'];
-                }
-            }
-
-            $data_update = ['saldo' => ($totalSaldo - $totalKredit),];
-            $where = ['tgl' => date('Y-m-d'), 'status_saldo' => 999];
-            return $this->model_admin->updateData('tb_saldo', $data_update, $where);
+            $saldo = $this->model_admin->getSUMSaldo($today)->result_array();
+            $totalSaldo = $saldo[0]['saldo'];
         }
 
-        return true;
+        $data_update = ['saldo' => ($totalSaldo - $totalKredit)];
+        $where = ['tgl' => $today, 'status_saldo' => 999];
+        return $this->model_admin->updateData('tb_saldo', $data_update, $where);
     }
 
     public function getSaldo($where = null)
@@ -136,6 +132,10 @@ class Admin extends CI_Controller
                                 'status_saldo' => 999,
                                 'ket' => 'Sisa Saldo',
                             ]);
+
+                            if ($insert) {
+                                $insert = $this->updateSisaSaldo();
+                            }
                         }
                     }
                 }
@@ -183,7 +183,8 @@ class Admin extends CI_Controller
         } else {
             $data = [
                 'saldo' => str_replace(["Rp", " ", "."], '', $total),
-                'ket' => $ket,
+                'ket' => ($ket != null) ? $ket : 'Saldo Tambahan',
+                'status_saldo' => ($ket != null) ? 4 : 3,
             ];
         }
 
@@ -287,6 +288,10 @@ class Admin extends CI_Controller
                 'status' => $status,
             ]);
 
+            if ($insert) {
+                $insert = $this->updateSisaSaldo();
+            }
+
             $response = [
                 'msg' => 'Data pengeluaran ' . (($insert) ? 'berhasil' : 'gagal') . ' tersimpan',
                 'status' => $insert,
@@ -331,6 +336,10 @@ class Admin extends CI_Controller
                 'id_pengeluaran' => $id_pengeluaran,
             ]);
 
+            if ($update) {
+                $update = $this->updateSisaSaldo();
+            }
+
             $response = [
                 'msg' => 'Data pengeluaran ' . (($update) ? 'berhasil' : 'gagal') . ' diubah',
                 'status' => $update,
@@ -357,6 +366,10 @@ class Admin extends CI_Controller
             'id_pengeluaran' => $id_pengeluaran,
         ]);
 
+        if ($delete) {
+            $delete = $this->updateSisaSaldo();
+        }
+
         $response = [
             'msg' => 'Data pengeluaran ' . (($delete) ? 'berhasil' : 'gagal') . ' dihapus',
             'status' => $delete,
@@ -377,7 +390,7 @@ class Admin extends CI_Controller
 
     public function getDeleteZipDB($filename)
     {
-        $path = './download/' . $filename;
+        $path = FCPATH . 'download/' . $filename;
         if (file_exists($path)) {
             // todo acction
             unlink($path);
@@ -430,9 +443,20 @@ class Admin extends CI_Controller
     public function do_cetak_harian($tgl)
     {
         $total_debit = 0;
+        $total_kredit = 0;
         $check_pengeluaran = $this->model_admin->getPengeluaranTanggal($tgl)->result_array();
         $check_saldo = $this->model_admin->getSaldoTanggal($tgl)->result_array();
         $sisa_saldo = $this->model_admin->getSaldoTanggal($tgl, true)->result_array();
+
+        if (count($check_saldo) > 0) {
+            $row = $this->model_admin->getSUMSaldo($tgl)->result_array();
+            $total_debit = $row[0]['saldo'];
+        }
+
+        if (count($check_pengeluaran) > 0) {
+            $d = $this->model_admin->getSUMPengeluaran($tgl)->result_array();
+            $total_kredit = $d[0]['total'];
+        }
 
         $excel = new PHPExcel();
         // Settingan awal file excel
@@ -477,8 +501,6 @@ class Admin extends CI_Controller
         $rowsaldo = 5;
         foreach ($check_saldo as $val) {
             if ($val['status_saldo'] != 999) {
-                $total_debit += (int) $val['saldo'];
-
                 $excel->setActiveSheetIndex(0)->setCellValue('A' . $rowsaldo, (($val['status_saldo'] == 1 || ($val['status_saldo'] == 2) ? '#' : '')));
                 $excel->setActiveSheetIndex(0)->setCellValue('B' . $rowsaldo, (($val['status_saldo'] == 3) ? '' : $val['ket']));
                 $excel->setActiveSheetIndex(0)->setCellValue('C' . $rowsaldo, $val['saldo']);
@@ -506,7 +528,6 @@ class Admin extends CI_Controller
 
         $no = 1; // Untuk penomoran tabel, di awal set dengan 1
         $numrow = $rowsaldo + 1; // Set baris pertama untuk isi tabel adalah baris ke 4
-        $kredit = 0;
         foreach ($check_pengeluaran as $d) {
             $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, $no . ".");
             $excel->setActiveSheetIndex(0)->setCellValue('B' . $numrow, $d['jenis'] . ((empty($d['nm_lengkap'])) ? ' ' : ' ' . $d['nm_lengkap'] . ' ') . $d['alokasi']);
@@ -525,8 +546,6 @@ class Admin extends CI_Controller
 
             $excel->getActiveSheet()->getStyle('D' . $numrow)->getNumberFormat()->setFormatCode(PHPExcel_Style_NumberFormat::FORMAT_ACCOUNTING_RUPIAH);
             $excel->getActiveSheet()->getRowDimension($numrow)->setRowHeight(20);
-
-            $kredit += (int) $d['total'];
 
             $no++;
             $numrow++;
@@ -547,7 +566,7 @@ class Admin extends CI_Controller
         $excel->getActiveSheet()->mergeCells('A' . $numrow . ':B' . $numrow);
         $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, "JUMLAH");
         $excel->setActiveSheetIndex(0)->setCellValue('C' . $numrow, $total_debit);
-        $excel->setActiveSheetIndex(0)->setCellValue('D' . $numrow, $kredit);
+        $excel->setActiveSheetIndex(0)->setCellValue('D' . $numrow, $total_kredit);
         $excel->setActiveSheetIndex(0)->setCellValue('E' . $numrow, $sisa_saldo[0]['saldo']);
 
         $excel->getActiveSheet()->getStyle('C' . $numrow)->getNumberFormat()->setFormatCode(PHPExcel_Style_NumberFormat::FORMAT_ACCOUNTING_RUPIAH);
@@ -613,9 +632,10 @@ class Admin extends CI_Controller
         }
 
         $result = ($nama == "null" && empty($alokasi)) ? [] : $this->model_admin->getdata('tb_pengeluaran', $where)->result_array();
-        $kredit = 0;
-        foreach ($result as $r) {
-            $kredit += (int) $r['total'];
+        $total_kredit = 0;
+        if (count($result) > 0) {
+            $kredit = $this->model_admin->getWhereSUMPengeluaran($where)->result_array();
+            $total_kredit = $kredit[0]['total'];
         }
 
         $excel = new PHPExcel();
@@ -661,7 +681,6 @@ class Admin extends CI_Controller
 
         $no = 1; // Untuk penomoran tabel, di awal set dengan 1
         $numrow = 5; // Set baris pertama untuk isi tabel adalah baris ke 4
-        $kredit = 0;
         foreach ($result as $d) {
             $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, $no . ".");
             $excel->setActiveSheetIndex(0)->setCellValue('B' . $numrow, $d['tanggal']);
@@ -680,8 +699,6 @@ class Admin extends CI_Controller
 
             $excel->getActiveSheet()->getStyle('E' . $numrow)->getNumberFormat()->setFormatCode(PHPExcel_Style_NumberFormat::FORMAT_ACCOUNTING_RUPIAH);
             $excel->getActiveSheet()->getRowDimension($numrow)->setRowHeight(20);
-
-            $kredit += (int) $d['total'];
 
             $no++;
             $numrow++;
@@ -702,7 +719,7 @@ class Admin extends CI_Controller
         $excel->getActiveSheet()->mergeCells('A' . $numrow . ':C' . $numrow);
         $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, "JUMLAH");
         $excel->setActiveSheetIndex(0)->setCellValue('D' . $numrow, 0);
-        $excel->setActiveSheetIndex(0)->setCellValue('E' . $numrow, $kredit);
+        $excel->setActiveSheetIndex(0)->setCellValue('E' . $numrow, $total_kredit);
 
         $excel->getActiveSheet()->getStyle('D' . $numrow)->getNumberFormat()->setFormatCode(PHPExcel_Style_NumberFormat::FORMAT_ACCOUNTING_RUPIAH);
         $excel->getActiveSheet()->getStyle('E' . $numrow)->getNumberFormat()->setFormatCode(PHPExcel_Style_NumberFormat::FORMAT_ACCOUNTING_RUPIAH);

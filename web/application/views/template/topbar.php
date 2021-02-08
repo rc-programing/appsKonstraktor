@@ -5,6 +5,16 @@
         <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="<?= $_SERVER["REQUEST_URI"]; ?>" class="nav-link" id="reloadScreen">
+                <i class="fas fa-sync"></i>
+            </a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="javascript:phpdesktop.ToggleFullscreen()" class="nav-link" id="maximizeScreen">
+                <i class="fas fa-window-maximize"></i>
+            </a>
+        </li>
     </ul>
 
     <!-- SEARCH FORM -->

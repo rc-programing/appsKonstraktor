@@ -47,5 +47,6 @@ function message($type, $info, $pesan)
 
 function format_rupiah($angka)
 {
-    return "Rp. " . number_format((float)$angka, 0, ',', '.');
+    $format = "Rp. " . number_format((float)$angka, 0, ',', '.');
+    return $format;
 }

@@ -11,13 +11,14 @@ class Page extends CI_Controller
 
     public function index()
     {
+        $today = date('Y-m-d');
         $total_debit = 0;
         $total_kredit = 0;
         $sisa_saldo = 0;
         $total_pengeluaran = 0;
         $checkDebit = $this->model_admin->getSaldo()->result_array();
         $checkSisasaldo = $this->model_admin->getSaldo(999);
-        $checkKredit = $this->model_admin->getPengeluaranTanggal(TODAY)->result_array();
+        $checkKredit = $this->model_admin->getPengeluaranTanggal($today)->result_array();
 
         foreach ($checkDebit as $debit) {
             if ($debit['status_saldo'] != 999) {
@@ -51,6 +52,7 @@ class Page extends CI_Controller
 
     public function data_saldo()
     {
+        $today = date('Y-m-d');
         $status_saldo_pindahan = 1;
         $saldo_harini = $this->model_admin->getSaldo()->result_array();
         $status_saldo = $this->model_admin->getSaldo(1)->num_rows();
@@ -74,16 +76,15 @@ class Page extends CI_Controller
 
     public function data_pengeluaran()
     {
+        $today = date('Y-m-d');
         $kredit = 0;
-        $checkData = $this->model_admin->getdata('tb_pengeluaran', ['tanggal' => TODAY]);
+        $checkData = $this->model_admin->getSUMPengeluaran($today);
         if ($checkData->num_rows() > 0) {
             $d = $checkData->result_array();
-            foreach ($d as $dt) {
-                $kredit += (int) $dt['total'];
-            }
+            $kredit = $d[0]['total'];
         }
 
-        $data['data_keluar'] = $this->model_admin->getdata('tb_pengeluaran', ['tanggal' => TODAY])->result_array();
+        $data['data_keluar'] = $this->model_admin->getdata('tb_pengeluaran', ['tanggal' => $today])->result_array();
         $data['kredit'] = $kredit;
         $this->load->view('template/header');
         $this->load->view('template/topbar');
@@ -142,33 +143,29 @@ class Page extends CI_Controller
 
     public function cetak_harian($search = '')
     {
+        $today = date('Y-m-d');
         $saldo = 0;
         $kredit = 0;
-        $date = TODAY;
+        $date = (empty($search)) ? $today : $search;
         $total_debit = 0;
         $dataKel = [];
-        $checkSaldo = $this->model_admin->getdata('tb_saldo', ['tgl' => ((empty($search)) ? TODAY : $search)]);
-        $checkData = $this->model_admin->getdata('tb_pengeluaran', ['tanggal' => ((empty($search)) ? TODAY : $search)]);
+
+        $checkSaldo = $this->model_admin->getdata('tb_saldo', ['tgl' => $date]);
+        $checkData = $this->model_admin->getdata('tb_pengeluaran', ['tanggal' => $date]);
 
         if ($checkSaldo->num_rows() > 0) {
-            $row = $checkSaldo->result_array();
-            foreach ($row as $d) {
-                if ($d['status_saldo'] != 999) {
-                    $total_debit += (int) $d['saldo'];
-                }
-            }
+            $row = $this->model_admin->getSUMSaldo($date)->result_array();
+            $total_debit = $row[0]['saldo'];
         }
 
         if ($checkData->num_rows() > 0) {
-            $d = $checkData->result_array();
-            $dataKel = $d;
-            foreach ($d as $dt) {
-                $kredit += (int) $dt['total'];
-            }
+            $d = $this->model_admin->getSUMPengeluaran($date)->result_array();
+            $dataKel = $checkData->result_array();
+            $kredit = $d[0]['total'];
         }
 
         $data = [
-            "date" => (empty($search)) ? $date : $search,
+            "date" => $date,
             "saldo" => ($total_debit - $kredit),
             "kredit" => $kredit,
             "total_debit" => ($total_debit + $saldo),

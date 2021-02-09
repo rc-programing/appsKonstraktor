@@ -92,7 +92,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= site_url('auth/logout'); ?>" class="nav-link">
+                    <a href="<?= site_url('page/logout'); ?>" class="nav-link">
                         <i class="nav-icon far fa-circle text-danger"></i>
                         <p>Logout</p>
                     </a>

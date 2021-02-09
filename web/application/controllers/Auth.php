@@ -7,7 +7,7 @@ class Auth extends CI_Controller
     {
         parent::__construct();
         if ($this->session->userdata('islogin') == true) {
-            redirect(site_url('admin'));
+            redirect(site_url('page'));
         }
 
         $this->load->model('model_auth');
@@ -61,15 +61,5 @@ class Auth extends CI_Controller
         }
 
         echo json_encode($response);
-    }
-
-    public function logout()
-    {
-        $this->session->unset_userdata('nama_lengkap');
-        $this->session->unset_userdata('username');
-        $this->session->unset_userdata('level');
-        $this->session->unset_userdata('id');
-        $this->session->unset_userdata('islogin');
-        redirect(site_url('auth'));
     }
 }

@@ -10,8 +10,8 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free/css/all.min.css'); ?>">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- pace-progress -->
+    <link rel="stylesheet" href="<?= base_url('assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css'); ?>">
     <!-- icheck bootstrap -->
     <link rel="stylesheet" href="<?= base_url('assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/plugins/toastr/toastr.min.css'); ?>">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css'); ?>">
 
     <!-- custom css -->
-    <link href="<?= base_url('assets/custom/style.min.css'); ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/custom/auth/style.min.css'); ?>" rel="stylesheet">
 
 </head>
 
@@ -70,6 +70,8 @@
     <script src="<?= base_url('assets/plugins/jquery/jquery.min.js'); ?>"></script>
     <!-- Bootstrap 4 -->
     <script src="<?= base_url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+    <!-- pace-progress -->
+    <script src="<?= base_url('assets/plugins/pace-progress/pace.min.js'); ?>"></script>
     <!-- Toastr -->
     <script src="<?= base_url('assets/plugins/toastr/toastr.min.js'); ?>"></script>
     <!-- AdminLTE App -->
@@ -77,7 +79,7 @@
     <!-- Axios -->
     <script src="<?= base_url('assets/dist/js/axio.min.js'); ?>"></script>
     <!-- Js user -->
-    <script src="<?= base_url('assets/custom/auth.min.js'); ?>"></script>
+    <script src="<?= base_url('assets/custom/auth/auth.min.js'); ?>"></script>
 
 </body>
 

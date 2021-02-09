@@ -6,6 +6,10 @@ class Auth extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if ($this->session->userdata('islogin') == true) {
+            redirect(site_url('admin'));
+        }
+
         $this->load->model('model_auth');
         $this->load->library('form_validation');
     }

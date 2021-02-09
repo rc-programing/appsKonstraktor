@@ -8,6 +8,10 @@ class Admin extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if ($this->session->userdata('islogin') != true) {
+            redirect(site_url('auth'));
+        }
+
         $this->load->model('model_admin');
         $this->load->helper('file');
         $this->load->helper('download');
@@ -34,7 +38,7 @@ class Admin extends CI_Controller
             $totalSaldo = $saldo[0]['saldo'];
         }
 
-        $data_update = ['saldo' => ($totalSaldo - $totalKredit)];
+        $data_update = ['saldo' => (intval($totalSaldo) - intval($totalKredit))];
         $where = ['tgl' => $today, 'status_saldo' => 999];
         return $this->model_admin->updateData('tb_saldo', $data_update, $where);
     }

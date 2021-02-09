@@ -144,8 +144,7 @@ class Page extends CI_Controller
     public function cetak_harian($search = '')
     {
         $today = date('Y-m-d');
-        $saldo = 0;
-        $kredit = 0;
+        $total_kredit = 0;
         $date = (empty($search)) ? $today : $search;
         $total_debit = 0;
         $dataKel = [];
@@ -161,14 +160,14 @@ class Page extends CI_Controller
         if ($checkData->num_rows() > 0) {
             $d = $this->model_admin->getSUMPengeluaran($date)->result_array();
             $dataKel = $checkData->result_array();
-            $kredit = $d[0]['total'];
+            $total_kredit = $d[0]['total'];
         }
 
         $data = [
             "date" => $date,
-            "saldo" => ($total_debit - $kredit),
-            "kredit" => $kredit,
-            "total_debit" => ($total_debit + $saldo),
+            "saldo" => ($total_debit - $total_kredit),
+            "kredit" => $total_kredit,
+            "total_debit" => $total_debit,
             "data_keluar" => $dataKel,
         ];
 

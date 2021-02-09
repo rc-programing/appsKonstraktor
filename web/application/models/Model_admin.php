@@ -70,7 +70,7 @@ class Model_admin extends CI_Model
             ->select_sum('saldo')
             ->from('tb_saldo')
             ->where('status_saldo !=', 999)
-            ->where('tanggal', $tgl)
+            ->where('tgl', $tgl)
             ->order_by('saldo desc')
             ->get();
     }

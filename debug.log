@@ -5361,3 +5361,619 @@
 - 05:32:36.843 DEBUG: OnBrowserDestroyed()
 - 05:32:37.875 INFO: Ended application
 - 05:32:37.875 INFO: --------------------------------------------------------
+- 05:53:53.000 INFO: --------------------------------------------------------
+- 05:53:53.000 INFO: Started application
+- 05:53:53.000 INFO: Logging to: G:\PROJEK\Isna Projek\appsKonstraktor\debug.log
+- 05:53:53.000 INFO: Log level = DEBUG4
+- 05:53:53.000 INFO: Starting Mongoose 3.9c web server
+- 05:53:53.000 INFO: WWW directory: G:\PROJEK\Isna Projek\appsKonstraktor\web
+- 05:53:53.000 INFO: Index files: index.html,index.php
+- 05:53:53.000 INFO: CGI interpreter: G:\PROJEK\Isna Projek\appsKonstraktor\php\php-cgi.exe
+- 05:53:53.000 INFO: CGI pattern: **.php$
+- 05:53:53.000 INFO: Hide files patterns: 
+- 05:53:53.000 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\HARIYA~1\AppData\Local\Temp\
+- 05:53:53.016 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 05:53:53.016 INFO: Web server url: http://127.0.0.1:58235/
+- 05:53:53.016 INFO: remote_debugging_port = 60231
+- 05:53:53.016 DEBUG: Command line string for the browser process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --remote-debugging-port=60231
+- 05:53:53.125 DEBUG: App::OnContextInitialized()
+- 05:53:53.125 DEBUG: Window max width/height = 1286/680
+- 05:53:53.125 DEBUG: GetBrowserWindow(): not found, hwnd = 1443318
+- 05:53:53.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 05:53:53.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 05:53:53.125 DEBUG: StoreBrowserWindow(): hwnd = 1443318
+- 05:53:53.297 DEBUG: ClientHandler::OnAfterCreated()
+- 05:53:53.297 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 05:53:53.328 DEBUG: OnLoadingStateChange: loading=1, url=
+- 05:53:54.000 DEBUG: Command line string for the gpu-process process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0046 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2900 --gpu-driver-date=11-26-2012 --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --service-request-channel-token=994A472E0354EDC51D496DCF0C6E0031 --mojo-platform-channel-handle=1764 /prefetch:2
+- 05:53:55.000 DEBUG: Command line string for the renderer process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=renderer --no-sandbox --primordial-pipe-token=05A22A6A18587CA550A8DB34BCFC18C0 --lang=en-US --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=05A22A6A18587CA550A8DB34BCFC18C0 --renderer-client-id=3 --mojo-platform-channel-handle=2348 /prefetch:1
+- 05:53:55.047 DEBUG: OnBrowserCreated()
+[0209/055355.338:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 05:54:01.969 INFO: GET 200 /
+- 05:54:01.266 INFO: GET 200 /assets/plugins/toastr/toastr.min.css
+- 05:54:01.266 INFO: GET 200 /assets/custom/style.min.css
+- 05:54:01.266 INFO: GET 200 /assets/plugins/toastr/toastr.min.js
+- 05:54:01.281 INFO: GET 200 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 05:54:01.297 INFO: GET 200 /assets/plugins/jquery/jquery.min.js
+- 05:54:01.297 INFO: GET 200 /assets/plugins/fontawesome-free/css/all.min.css
+- 05:54:01.312 INFO: GET 200 /assets/dist/css/adminlte.min.css
+- 05:54:01.359 INFO: GET 200 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 05:54:01.719 DEBUG: OnContextCreated()
+- 05:54:02.469 INFO: GET 200 /assets/custom/auth.min.js
+- 05:54:02.516 INFO: GET 200 /assets/dist/js/axio.min.js
+- 05:54:02.531 INFO: GET 200 /assets/dist/js/adminlte.min.js
+- 05:54:09.484 INFO: GET 200 /assets/img/bg_body.jpg
+- 05:54:09.500 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+- 05:54:09.500 INFO: GET 200 /assets/img/bg_login.png
+- 05:54:10.547 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/
+- 05:54:15.828 INFO: POST 200 /auth/login
+- 05:54:15.906 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/
+- 05:54:15.172 INFO: GET 200 /page
+- 05:54:15.532 DEBUG: OnContextCreated()
+- 05:54:15.281 INFO: GET 200 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 05:54:15.312 INFO: GET 200 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 05:54:15.312 INFO: GET 200 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 05:54:15.328 INFO: GET 200 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 05:54:16.500 INFO: GET 200 /assets/plugins/select2/css/select2.min.css
+- 05:54:16.531 INFO: GET 200 /assets/plugins/pace-progress/pace.min.js
+- 05:54:16.578 INFO: GET 200 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 05:54:16.609 INFO: GET 200 /assets/plugins/select2/js/select2.full.min.js
+- 05:54:16.641 INFO: GET 200 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 05:54:16.656 INFO: GET 200 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 05:54:16.656 INFO: GET 200 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 05:54:16.672 INFO: GET 200 /assets/plugins/datatables/jquery.dataTables.min.js
+- 05:54:16.672 INFO: GET 200 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 05:54:16.312 INFO: GET 200 /assets/dist/img/SipdakLogo1.png
+- 05:54:16.328 INFO: GET 200 /assets/dist/img/SipdakLogo.png
+- 05:54:16.344 INFO: GET 200 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 05:54:16.359 INFO: GET 200 /assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+- 05:54:18.859 INFO: GET 200 /assets/custom/script.min.js
+- 05:54:18.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page
+- 05:54:22.797 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page
+- 05:54:22.297 DEBUG: OnContextCreated()
+- 05:54:22.000 INFO: GET 200 /page/data_pengeluaran
+- 05:54:22.109 INFO: GET 200 /assets/custom/pengeluaranJs/outs.min.js
+- 05:54:23.016 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 05:54:42.516 INFO: POST 200 /admin/tambahPengeluaran
+- 05:54:42.531 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 05:54:42.063 DEBUG: OnContextCreated()
+- 05:54:42.766 INFO: GET 200 /page/data_pengeluaran
+- 05:54:42.766 INFO: GET 304 /assets/plugins/fontawesome-free/css/all.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/select2/css/select2.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/toastr/toastr.min.css
+- 05:54:42.781 INFO: GET 304 /assets/dist/css/adminlte.min.css
+- 05:54:42.781 INFO: GET 304 /assets/custom/style.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 05:54:42.781 INFO: GET 304 /assets/plugins/jquery/jquery.min.js
+- 05:54:42.797 INFO: GET 304 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 05:54:42.797 INFO: GET 304 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 05:54:42.797 INFO: GET 304 /assets/plugins/pace-progress/pace.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/select2/js/select2.full.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/datatables/jquery.dataTables.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 05:54:42.812 INFO: GET 304 /assets/plugins/toastr/toastr.min.js
+- 05:54:42.812 INFO: GET 304 /assets/dist/js/adminlte.min.js
+- 05:54:42.812 INFO: GET 304 /assets/dist/js/axio.min.js
+- 05:54:42.812 INFO: GET 304 /assets/custom/script.min.js
+- 05:54:42.828 INFO: GET 304 /assets/custom/pengeluaranJs/outs.min.js
+- 05:54:42.828 INFO: GET 304 /assets/dist/img/SipdakLogo.png
+- 05:54:42.828 INFO: GET 304 /assets/dist/img/SipdakLogo1.png
+- 05:54:42.250 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 05:55:40.516 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 05:55:40.047 DEBUG: OnContextCreated()
+- 05:55:40.734 INFO: GET 200 /page/searching
+- 05:55:40.766 INFO: GET 200 /assets/custom/utilitisJs/utilitis.min.js
+- 05:55:40.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/searching
+- 05:55:43.562 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/searching
+- 05:55:43.094 DEBUG: OnContextCreated()
+- 05:55:43.797 INFO: GET 200 /page/cetak_harian
+- 05:55:43.219 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 05:56:08.875 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 05:56:08.375 DEBUG: OnContextCreated()
+- 05:56:08.078 INFO: GET 200 /page/data_saldo
+- 05:56:08.109 INFO: GET 200 /assets/custom/saldoJs/ins.min.js
+- 05:56:09.609 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 05:56:57.766 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 05:56:58.969 DEBUG: OnContextCreated()
+- 05:56:58.656 INFO: GET 200 /page/cetak_harian
+- 05:56:58.187 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 05:57:16.125 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 05:57:16.672 DEBUG: OnContextCreated()
+- 05:57:16.359 INFO: GET 200 /page/data_saldo
+- 05:57:17.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:05.937 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:05.438 DEBUG: OnContextCreated()
+- 05:58:05.125 INFO: GET 200 /page/data_saldo
+- 05:58:06.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:07.031 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:07.547 DEBUG: OnContextCreated()
+- 05:58:07.250 INFO: GET 200 /page/data_saldo
+- 05:58:08.594 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:09.531 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:09.032 DEBUG: OnContextCreated()
+- 05:58:09.734 INFO: GET 200 /page/data_saldo
+- 05:58:09.062 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:21.156 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 05:58:21.657 DEBUG: OnContextCreated()
+- 05:58:21.344 INFO: GET 200 /page/cetak_harian
+- 05:58:22.781 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:05:16.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:05:16.094 DEBUG: OnContextCreated()
+- 06:05:16.797 INFO: GET 200 /page/cetak_harian
+- 06:05:16.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:05:49.953 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:05:49.500 DEBUG: OnContextCreated()
+- 06:05:49.203 INFO: GET 200 /page/data_saldo
+- 06:05:50.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 06:05:54.078 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 06:05:54.594 DEBUG: OnContextCreated()
+- 06:05:54.281 INFO: GET 200 /page/cetak_harian
+- 06:05:55.641 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:06:49.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:06:50.797 DEBUG: OnContextCreated()
+- 06:06:50.484 INFO: GET 200 /page/data_saldo
+- 06:06:50.016 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 06:06:54.781 INFO: GET 200 /admin/getSaldo/68
+- 06:06:56.484 INFO: POST 200 /admin/ubahSaldo/68
+[0209/060656.128:INFO:CONSOLE(1)] "[object Object]", source: http://127.0.0.1:58235/assets/custom/saldoJs/ins.min.js (1)
+- 06:06:56.547 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 06:06:56.079 DEBUG: OnContextCreated()
+- 06:06:56.781 INFO: GET 200 /page/data_saldo
+- 06:06:56.781 INFO: GET 304 /assets/plugins/fontawesome-free/css/all.min.css
+- 06:06:56.781 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 06:06:56.797 INFO: GET 304 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 06:06:56.797 INFO: GET 304 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 06:06:56.797 INFO: GET 304 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 06:06:56.797 INFO: GET 304 /assets/plugins/select2/css/select2.min.css
+- 06:06:56.797 INFO: GET 304 /assets/plugins/toastr/toastr.min.css
+- 06:06:56.797 INFO: GET 304 /assets/dist/css/adminlte.min.css
+- 06:06:56.797 INFO: GET 304 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 06:06:56.797 INFO: GET 304 /assets/custom/style.min.css
+- 06:06:56.812 INFO: GET 304 /assets/plugins/jquery/jquery.min.js
+- 06:06:56.812 INFO: GET 304 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 06:06:56.812 INFO: GET 304 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/pace-progress/pace.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/select2/js/select2.full.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/datatables/jquery.dataTables.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 06:06:56.828 INFO: GET 304 /assets/plugins/toastr/toastr.min.js
+- 06:06:56.828 INFO: GET 304 /assets/dist/js/adminlte.min.js
+- 06:06:56.828 INFO: GET 304 /assets/dist/js/axio.min.js
+- 06:06:56.828 INFO: GET 304 /assets/custom/script.min.js
+- 06:06:56.844 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 06:06:56.844 INFO: GET 304 /assets/dist/img/SipdakLogo.png
+- 06:06:56.844 INFO: GET 304 /assets/dist/img/SipdakLogo1.png
+- 06:06:56.141 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 06:06:59.203 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 06:07:00.735 DEBUG: OnContextCreated()
+- 06:07:00.437 INFO: GET 200 /page/cetak_harian
+- 06:07:00.781 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:09:12.266 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:09:13.829 DEBUG: OnContextCreated()
+- 06:09:13.516 INFO: GET 200 /page/cetak_harian
+- 06:09:13.172 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:09:20.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:09:20.938 DEBUG: OnContextCreated()
+- 06:09:20.625 INFO: GET 200 /page/data_pengeluaran
+- 06:09:20.047 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:09:23.531 INFO: GET 200 /admin/getPengeluaran/55
+- 06:09:25.328 INFO: POST 200 /admin/ubahPengeluaran/55
+- 06:09:25.344 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:09:26.969 DEBUG: OnContextCreated()
+- 06:09:26.672 INFO: GET 200 /page/data_pengeluaran
+- 06:09:26.672 INFO: GET 304 /assets/plugins/fontawesome-free/css/all.min.css
+- 06:09:26.672 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 06:09:26.687 INFO: GET 304 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 06:09:26.687 INFO: GET 304 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 06:09:26.687 INFO: GET 304 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 06:09:26.687 INFO: GET 304 /assets/plugins/select2/css/select2.min.css
+- 06:09:26.687 INFO: GET 304 /assets/plugins/toastr/toastr.min.css
+- 06:09:26.687 INFO: GET 304 /assets/dist/css/adminlte.min.css
+- 06:09:26.703 INFO: GET 304 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 06:09:26.703 INFO: GET 304 /assets/custom/style.min.css
+- 06:09:26.703 INFO: GET 304 /assets/plugins/jquery/jquery.min.js
+- 06:09:26.703 INFO: GET 304 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 06:09:26.703 INFO: GET 304 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 06:09:26.719 INFO: GET 304 /assets/plugins/pace-progress/pace.min.js
+- 06:09:26.719 INFO: GET 304 /assets/plugins/select2/js/select2.full.min.js
+- 06:09:26.719 INFO: GET 304 /assets/plugins/datatables/jquery.dataTables.min.js
+- 06:09:26.719 INFO: GET 304 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 06:09:26.719 INFO: GET 304 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 06:09:26.719 INFO: GET 304 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 06:09:26.719 INFO: GET 304 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 06:09:26.734 INFO: GET 304 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 06:09:26.734 INFO: GET 304 /assets/plugins/toastr/toastr.min.js
+- 06:09:26.734 INFO: GET 304 /assets/dist/js/adminlte.min.js
+- 06:09:26.734 INFO: GET 304 /assets/dist/js/axio.min.js
+- 06:09:26.734 INFO: GET 304 /assets/custom/script.min.js
+- 06:09:26.734 INFO: GET 304 /assets/custom/pengeluaranJs/outs.min.js
+- 06:09:26.734 INFO: GET 304 /assets/dist/img/SipdakLogo.png
+- 06:09:26.734 INFO: GET 304 /assets/dist/img/SipdakLogo1.png
+- 06:09:26.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:09:32.969 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:09:32.500 DEBUG: OnContextCreated()
+- 06:09:32.187 INFO: GET 200 /page/backup
+- 06:09:33.500 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup
+- 06:09:34.891 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup
+- 06:09:34.407 DEBUG: OnContextCreated()
+- 06:09:34.094 INFO: GET 200 /page/cetak_harian
+- 06:09:35.422 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:09:47.187 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 06:09:47.688 DEBUG: OnContextCreated()
+- 06:09:47.391 INFO: GET 200 /page/data_pengeluaran
+- 06:09:48.734 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:09:50.484 INFO: GET 200 /admin/getPengeluaran/55
+- 06:10:01.094 INFO: POST 200 /admin/ubahPengeluaran/55
+- 06:10:01.109 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:10:01.641 DEBUG: OnContextCreated()
+- 06:10:01.328 INFO: GET 200 /page/data_pengeluaran
+- 06:10:01.344 INFO: GET 304 /assets/plugins/fontawesome-free/css/all.min.css
+- 06:10:01.344 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 06:10:01.344 INFO: GET 304 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 06:10:01.344 INFO: GET 304 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 06:10:01.359 INFO: GET 304 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 06:10:01.359 INFO: GET 304 /assets/plugins/select2/css/select2.min.css
+- 06:10:01.359 INFO: GET 304 /assets/plugins/toastr/toastr.min.css
+- 06:10:01.359 INFO: GET 304 /assets/dist/css/adminlte.min.css
+- 06:10:01.359 INFO: GET 304 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 06:10:01.359 INFO: GET 304 /assets/custom/style.min.css
+- 06:10:01.359 INFO: GET 304 /assets/plugins/jquery/jquery.min.js
+- 06:10:01.359 INFO: GET 304 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 06:10:01.375 INFO: GET 304 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 06:10:01.375 INFO: GET 304 /assets/plugins/pace-progress/pace.min.js
+- 06:10:01.375 INFO: GET 304 /assets/plugins/select2/js/select2.full.min.js
+- 06:10:01.375 INFO: GET 304 /assets/plugins/datatables/jquery.dataTables.min.js
+- 06:10:01.375 INFO: GET 304 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 06:10:01.375 INFO: GET 304 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 06:10:01.375 INFO: GET 304 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 06:10:01.391 INFO: GET 304 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 06:10:01.391 INFO: GET 304 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 06:10:01.391 INFO: GET 304 /assets/plugins/toastr/toastr.min.js
+- 06:10:01.391 INFO: GET 304 /assets/dist/js/adminlte.min.js
+- 06:10:01.391 INFO: GET 304 /assets/dist/js/axio.min.js
+- 06:10:01.391 INFO: GET 304 /assets/custom/script.min.js
+- 06:10:01.391 INFO: GET 304 /assets/custom/pengeluaranJs/outs.min.js
+- 06:10:01.391 INFO: GET 304 /assets/dist/img/SipdakLogo.png
+- 06:10:01.391 INFO: GET 304 /assets/dist/img/SipdakLogo1.png
+- 06:10:02.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:10:08.531 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 06:10:08.032 DEBUG: OnContextCreated()
+- 06:10:08.719 INFO: GET 200 /page/data_saldo
+- 06:10:08.047 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 06:11:55.266 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 06:11:56.844 DEBUG: OnContextCreated()
+- 06:11:56.547 INFO: GET 200 /page/data_saldo
+- 06:11:56.094 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 06:11:58.078 INFO: GET 200 /admin/getSaldo/68
+- 06:12:06.062 INFO: POST 200 /admin/ubahSaldo/68
+[0209/061206.662:INFO:CONSOLE(1)] "[object Object]", source: http://127.0.0.1:58235/assets/custom/saldoJs/ins.min.js (1)
+- 06:12:06.078 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 06:12:06.625 DEBUG: OnContextCreated()
+- 06:12:06.312 INFO: GET 200 /page/data_saldo
+- 06:12:06.328 INFO: GET 304 /assets/plugins/fontawesome-free/css/all.min.css
+- 06:12:06.328 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 06:12:06.328 INFO: GET 304 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 06:12:06.328 INFO: GET 304 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 06:12:06.328 INFO: GET 304 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 06:12:06.328 INFO: GET 304 /assets/plugins/select2/css/select2.min.css
+- 06:12:06.328 INFO: GET 304 /assets/plugins/toastr/toastr.min.css
+- 06:12:06.328 INFO: GET 304 /assets/dist/css/adminlte.min.css
+- 06:12:06.344 INFO: GET 304 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 06:12:06.344 INFO: GET 304 /assets/custom/style.min.css
+- 06:12:06.344 INFO: GET 304 /assets/plugins/jquery/jquery.min.js
+- 06:12:06.344 INFO: GET 304 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 06:12:06.344 INFO: GET 304 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/pace-progress/pace.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/select2/js/select2.full.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/datatables/jquery.dataTables.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 06:12:06.359 INFO: GET 304 /assets/plugins/toastr/toastr.min.js
+- 06:12:06.359 INFO: GET 304 /assets/dist/js/adminlte.min.js
+- 06:12:06.359 INFO: GET 304 /assets/dist/js/axio.min.js
+- 06:12:06.359 INFO: GET 304 /assets/custom/script.min.js
+- 06:12:06.375 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 06:12:06.375 INFO: GET 304 /assets/dist/img/SipdakLogo.png
+- 06:12:06.375 INFO: GET 304 /assets/dist/img/SipdakLogo1.png
+- 06:12:07.875 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:33.953 INFO: GET 200 /admin/getStatuSaldo
+[0209/111433.547:INFO:CONSOLE(1)] "1", source: http://127.0.0.1:58235/assets/custom/saldoJs/ins.min.js (1)
+- 11:14:37.516 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:37.734 INFO: GET 200 /page/data_saldo
+- 11:14:37.079 DEBUG: OnContextCreated()
+- 11:14:37.812 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:14:37.891 INFO: GET 304 /assets/custom/script.min.js
+- 11:14:37.891 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:14:38.469 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:39.406 INFO: GET 200 /admin/getStatuSaldo
+[0209/111440.002:INFO:CONSOLE(1)] "1", source: http://127.0.0.1:58235/assets/custom/saldoJs/ins.min.js (1)
+- 11:14:46.547 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:46.110 DEBUG: OnContextCreated()
+- 11:14:46.797 INFO: GET 200 /page/data_saldo
+- 11:14:46.812 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:14:46.828 INFO: GET 304 /assets/custom/script.min.js
+- 11:14:46.828 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:14:46.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:48.187 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:48.688 DEBUG: OnContextCreated()
+- 11:14:48.391 INFO: GET 200 /page/data_saldo
+- 11:14:48.391 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:14:48.406 INFO: GET 304 /assets/custom/script.min.js
+- 11:14:48.406 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:14:49.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:50.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:51.922 DEBUG: OnContextCreated()
+- 11:14:51.609 INFO: GET 200 /page/data_saldo
+- 11:14:51.625 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:14:51.687 INFO: GET 304 /assets/custom/script.min.js
+- 11:14:51.687 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:14:51.937 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:53.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:14:53.016 DEBUG: OnContextCreated()
+- 11:14:53.703 INFO: GET 200 /page/data_saldo
+- 11:14:53.703 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:14:53.719 INFO: GET 304 /assets/custom/script.min.js
+- 11:14:53.719 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:14:53.062 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:00.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:00.000 DEBUG: OnContextCreated()
+- 11:15:00.687 INFO: GET 200 /page/data_saldo
+- 11:15:00.703 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:00.703 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:00.719 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:15:00.016 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:01.344 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:02.875 DEBUG: OnContextCreated()
+- 11:15:02.562 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:02.562 INFO: GET 200 /page/data_saldo
+- 11:15:02.594 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:02.609 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:15:02.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:05.234 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:06.735 DEBUG: OnContextCreated()
+- 11:15:06.422 INFO: GET 200 /page/data_saldo
+- 11:15:06.437 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:06.484 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:06.500 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:15:06.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:07.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:08.000 DEBUG: OnContextCreated()
+- 11:15:08.687 INFO: GET 200 /page/data_saldo
+- 11:15:08.719 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:08.719 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:08.719 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:15:08.031 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:09.297 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:10.875 DEBUG: OnContextCreated()
+- 11:15:10.562 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:10.562 INFO: GET 200 /page/data_saldo
+- 11:15:10.625 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:10.625 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:15:10.875 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:15.516 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:15:15.594 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo#
+- 11:15:22.891 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo#
+- 11:15:22.500 DEBUG: OnContextCreated()
+- 11:15:22.203 INFO: GET 200 /page/cetak_harian
+- 11:15:22.203 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:22.250 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:22.250 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:15:23.859 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:15:25.437 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:15:25.969 DEBUG: OnContextCreated()
+- 11:15:25.672 INFO: GET 200 /page/backup
+- 11:15:25.687 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:25.687 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:15:25.703 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:25.922 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup
+- 11:15:26.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup
+- 11:15:26.938 DEBUG: OnContextCreated()
+- 11:15:26.641 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:15:26.641 INFO: GET 200 /page/cetak_harian
+- 11:15:26.687 INFO: GET 304 /assets/custom/script.min.js
+- 11:15:26.687 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:15:26.937 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:16:48.844 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:16:48.485 DEBUG: OnContextCreated()
+- 11:16:48.187 INFO: GET 200 /page/data_saldo
+- 11:16:48.187 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:16:48.203 INFO: GET 304 /assets/custom/script.min.js
+- 11:16:48.203 INFO: GET 304 /assets/custom/saldoJs/ins.min.js
+- 11:16:49.734 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_saldo
+- 11:16:50.703 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_saldo
+- 11:16:50.266 DEBUG: OnContextCreated()
+- 11:16:50.953 INFO: GET 200 /page/data_pengeluaran
+- 11:16:50.969 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:16:50.984 INFO: GET 304 /assets/custom/script.min.js
+- 11:16:50.984 INFO: GET 304 /assets/custom/pengeluaranJs/outs.min.js
+- 11:16:50.312 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 11:16:55.828 INFO: GET 200 /admin/getPengeluaran/55
+- 11:16:57.047 INFO: POST 200 /admin/ubahPengeluaran/55
+- 11:16:57.078 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 11:16:57.594 DEBUG: OnContextCreated()
+- 11:16:57.281 INFO: GET 200 /page/data_pengeluaran
+- 11:16:57.297 INFO: GET 304 /assets/plugins/fontawesome-free/css/all.min.css
+- 11:16:57.297 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:16:57.297 INFO: GET 304 /assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+- 11:16:57.297 INFO: GET 304 /assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+- 11:16:57.312 INFO: GET 304 /assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+- 11:16:57.312 INFO: GET 304 /assets/plugins/select2/css/select2.min.css
+- 11:16:57.312 INFO: GET 304 /assets/plugins/toastr/toastr.min.css
+- 11:16:57.312 INFO: GET 304 /assets/dist/css/adminlte.min.css
+- 11:16:57.312 INFO: GET 304 /assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+- 11:16:57.312 INFO: GET 304 /assets/custom/style.min.css
+- 11:16:57.312 INFO: GET 304 /assets/plugins/jquery/jquery.min.js
+- 11:16:57.328 INFO: GET 304 /assets/plugins/jquery-ui/jquery-ui.min.js
+- 11:16:57.328 INFO: GET 304 /assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+- 11:16:57.328 INFO: GET 304 /assets/plugins/pace-progress/pace.min.js
+- 11:16:57.328 INFO: GET 304 /assets/plugins/select2/js/select2.full.min.js
+- 11:16:57.328 INFO: GET 304 /assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+- 11:16:57.328 INFO: GET 304 /assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+- 11:16:57.328 INFO: GET 304 /assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+- 11:16:57.344 INFO: GET 304 /assets/plugins/sweetalert2/sweetalert2.min.js
+- 11:16:57.344 INFO: GET 304 /assets/plugins/toastr/toastr.min.js
+- 11:16:57.344 INFO: GET 304 /assets/dist/js/adminlte.min.js
+- 11:16:57.344 INFO: GET 304 /assets/dist/js/axio.min.js
+- 11:16:57.344 INFO: GET 304 /assets/plugins/datatables/jquery.dataTables.min.js
+- 11:16:57.344 INFO: GET 304 /assets/custom/script.min.js
+- 11:16:57.344 INFO: GET 304 /assets/custom/pengeluaranJs/outs.min.js
+- 11:16:57.344 INFO: GET 304 /assets/dist/img/SipdakLogo.png
+- 11:16:57.344 INFO: GET 304 /assets/dist/img/SipdakLogo1.png
+- 11:16:57.359 INFO: GET 304 /assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+- 11:16:58.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 11:17:02.062 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/data_pengeluaran
+- 11:17:02.547 DEBUG: OnContextCreated()
+- 11:17:02.250 INFO: GET 200 /page/cetak_harian
+- 11:17:02.250 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:17:02.266 INFO: GET 304 /assets/custom/script.min.js
+- 11:17:02.266 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:17:03.578 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:17:57.672 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:17:57.266 DEBUG: OnContextCreated()
+- 11:17:57.953 INFO: GET 200 /page/searching
+- 11:17:57.953 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:17:57.969 INFO: GET 304 /assets/custom/script.min.js
+- 11:17:57.969 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:17:57.344 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/searching
+- 11:18:01.391 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/searching
+- 11:18:02.985 DEBUG: OnContextCreated()
+- 11:18:02.672 INFO: GET 200 /page/searching/Hariyanto/
+- 11:18:02.672 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:18:02.687 INFO: GET 304 /assets/custom/script.min.js
+- 11:18:02.687 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:18:02.016 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/searching/Hariyanto/
+- 11:18:12.078 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/searching/Hariyanto/
+- 11:18:12.579 DEBUG: OnContextCreated()
+- 11:18:12.281 INFO: GET 200 /page/searching/QWERTY/
+- 11:18:12.281 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:18:12.281 INFO: GET 304 /assets/custom/script.min.js
+- 11:18:12.297 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:18:13.844 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/searching/QWERTY/
+- 11:18:15.141 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/searching/QWERTY/
+- 11:18:15.704 DEBUG: OnContextCreated()
+- 11:18:15.406 INFO: GET 200 /page/cetak_harian
+- 11:18:15.406 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:18:16.422 INFO: GET 304 /assets/custom/script.min.js
+- 11:18:16.422 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:18:16.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:18:17.969 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:18:18.328 INFO: GET 200 /admin/do_cetak_harian/2021-02-09
+- 11:18:19.469 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:58235/admin/do_cetak_harian/2021-02-09
+- 11:18:19.469 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:18:19.562 INFO: About to download a file: Laporan-pegeluaran-harian-20210209111818.xlsx
+- 11:18:26.641 INFO: Download completed, saved to: C:\Users\Hariyanto Dawaso\Downloads\Laporan-pegeluaran-harian-20210209111818.xlsx
+- 11:19:06.469 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/cetak_harian
+- 11:19:06.063 DEBUG: OnContextCreated()
+- 11:19:06.750 INFO: GET 200 /page/searching
+- 11:19:06.766 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:19:06.766 INFO: GET 304 /assets/custom/script.min.js
+- 11:19:06.766 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:19:06.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/searching
+- 11:19:13.437 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/searching
+- 11:19:13.000 DEBUG: OnContextCreated()
+- 11:19:13.687 INFO: GET 200 /page/backup
+- 11:19:13.687 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:19:13.703 INFO: GET 304 /assets/custom/script.min.js
+- 11:19:13.703 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:19:13.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup
+- 11:19:22.719 INFO: GET 200 /admin/getEksport
+- 11:19:22.328 INFO: GET 200 /download/databases_20210209-111922.zip
+- 11:19:23.562 INFO: GET 200 /admin/getDeleteZipDB/databases_20210209-111922.zip
+[0209/111923.413:INFO:CONSOLE(1)] "[object Object]", source: http://127.0.0.1:58235/assets/custom/utilitisJs/utilitis.min.js (1)
+- 11:19:23.078 INFO: About to download a file: databases_20210209-111922.zip
+- 11:19:27.922 INFO: Download was cancelled
+- 11:22:26.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup
+- 11:22:26.172 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup#
+- 11:22:30.000 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup#
+- 11:22:30.000 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup#
+- 11:22:37.047 DEBUG: ClientHandler::OnAfterCreated()
+- 11:22:37.047 DEBUG: GetBrowserWindow(): not found, hwnd = 657274
+- 11:22:37.047 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 11:22:37.047 DEBUG: StoreBrowserWindow(): hwnd = 657274
+- 11:22:37.047 DEBUG: Centering popup window relative to its parent
+- 11:22:38.500 DEBUG: OnLoadingStateChange: loading=1, url=
+- 11:22:39.015 DEBUG: Command line string for the renderer process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=renderer --no-sandbox --primordial-pipe-token=D06AE20A153F4DA9716876981214998D --lang=en-US --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=D06AE20A153F4DA9716876981214998D --renderer-client-id=4 --mojo-platform-channel-handle=3548 /prefetch:1
+- 11:22:39.078 DEBUG: OnBrowserCreated()
+- 11:22:39.421 DEBUG: OnContextCreated()
+- 11:22:40.422 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 11:22:40.094 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:22:41.484 INFO: GET 200 /assets/dist/css/adminlte.min.css.map
+- 11:22:46.937 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup#
+- 11:22:46.937 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup#
+- 11:23:49.281 DEBUG: OnBeforeClose() hwnd=657274
+- 11:23:49.281 DEBUG: RemoveBrowserWindow(): hwnd = 657274
+- 11:23:50.890 DEBUG: OnBrowserDestroyed()
+- 11:23:53.141 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup#
+- 11:23:53.141 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup#
+- 11:24:02.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup#
+- 11:24:03.672 DEBUG: OnContextCreated()
+- 11:24:03.375 INFO: GET 200 /page/backup
+- 11:24:03.375 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:24:04.422 INFO: GET 304 /assets/custom/script.min.js
+- 11:24:04.422 INFO: GET 304 /assets/custom/utilitisJs/utilitis.min.js
+- 11:24:04.781 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page/backup
+- 11:25:41.687 INFO: GET 200 /admin/getEksport
+- 11:25:41.687 INFO: GET 200 /download/databases_20210209-112540.zip
+- 11:25:41.734 INFO: About to download a file: databases_20210209-112540.zip
+- 11:25:41.203 INFO: GET 200 /admin/getDeleteZipDB/databases_20210209-112540.zip
+[0209/112552.239:INFO:CONSOLE(1)] "[object Object]", source: http://127.0.0.1:58235/assets/custom/utilitisJs/utilitis.min.js (1)
+- 11:25:53.625 INFO: Download completed, saved to: C:\Users\Hariyanto Dawaso\Downloads\databases_20210209-112540.zip
+- 11:26:01.344 INFO: GET 200 /admin/getEksport
+- 11:26:01.391 INFO: GET 200 /download/databases_20210209-112601.zip
+- 11:26:01.391 INFO: About to download a file: databases_20210209-112601.zip
+- 11:26:02.828 INFO: GET 200 /admin/getDeleteZipDB/databases_20210209-112601.zip
+[0209/112606.673:INFO:CONSOLE(1)] "[object Object]", source: http://127.0.0.1:58235/assets/custom/utilitisJs/utilitis.min.js (1)
+- 11:26:06.078 INFO: Download was cancelled
+- 11:26:37.469 INFO: POST 200 /admin/getImport
+[0209/112637.058:INFO:CONSOLE(1)] "[object Object]", source: http://127.0.0.1:58235/assets/custom/utilitisJs/utilitis.min.js (1)
+- 11:26:37.469 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page/backup
+- 11:26:37.859 INFO: GET 302 /auth/logout
+- 11:26:37.454 DEBUG: OnContextCreated()
+- 11:26:37.141 INFO: GET 200 /auth
+- 11:26:38.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/auth
+- 11:26:47.422 INFO: POST 200 /auth/login
+- 11:26:47.437 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/auth
+- 11:26:47.141 DEBUG: OnContextCreated()
+- 11:26:47.844 INFO: GET 304 /assets/plugins/pace-progress/themes/black/pace-theme-loading-bar.min.css
+- 11:26:47.844 INFO: GET 200 /page
+- 11:26:47.969 INFO: GET 304 /assets/custom/script.min.js
+- 11:26:48.422 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page
+- 11:26:49.906 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page
+- 11:26:49.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page#
+- 11:26:51.000 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page#
+- 11:26:51.016 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page#
+- 11:26:53.562 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page#
+- 11:26:53.562 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page#
+- 11:26:54.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page#
+- 11:26:54.172 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page#
+- 11:26:56.156 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page#
+- 11:26:56.156 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page#
+- 11:26:58.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:58235/page#
+- 11:26:58.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:58235/page#
+- 11:27:07.281 DEBUG: WM_DESTROY
+- 11:27:07.281 DEBUG: RemoveBrowserWindow(): hwnd = 1443318
+- 11:27:07.281 INFO: Stopping Mongoose web server
+- 11:27:07.281 DEBUG: Mongoose webserver stopped immediately
+- 11:27:07.281 DEBUG: OnBeforeClose() hwnd=9831762
+- 11:27:07.281 DEBUG: RemoveBrowserWindow(): hwnd = 9831762
+- 11:27:07.281 DEBUG: GetBrowserWindow(): not found, hwnd = 9831762
+- 11:27:07.281 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 11:27:07.281 DEBUG: Calling CefQuitMessageLoop()
+- 11:27:08.750 DEBUG: OnBrowserDestroyed()
+- 11:27:09.234 INFO: Ended application
+- 11:27:09.234 INFO: --------------------------------------------------------

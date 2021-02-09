@@ -102,7 +102,7 @@ class Admin extends CI_Controller
                     'tgl' => $date,
                     'saldo' => str_replace(["Rp", " ", "."], '', $saldo),
                     'status_saldo' => $checkbox,
-                    'ket' => (($ket == null) ? 'Saldo Tambahan' : $ket),
+                    'ket' => (($ket == null) ? 'Saldo Tambahan' : ucwords($ket)),
                 ];
 
                 $insert = $this->model_admin->saveData('tb_saldo', $data_insert);
@@ -187,7 +187,7 @@ class Admin extends CI_Controller
         } else {
             $data = [
                 'saldo' => str_replace(["Rp", " ", "."], '', $total),
-                'ket' => ($ket != null) ? $ket : 'Saldo Tambahan',
+                'ket' => ($ket != null) ? ucwords($ket) : 'Saldo Tambahan',
                 'status_saldo' => ($ket != null) ? 4 : 3,
             ];
         }
@@ -269,13 +269,11 @@ class Admin extends CI_Controller
 
     public function tambahPengeluaran()
     {
-        $this->form_validation->set_rules("jenis", "jenis pembayaran", "trim|required", ["required" => "Kolom {field} tidak boleh kosong"]);
-        $this->form_validation->set_rules("alokasi", "alokasi dana", "trim|required", ["required" => "Kolom {field} tidak boleh kosong"]);
         $this->form_validation->set_rules("total", "total", "trim|required", ["required" => "Kolom {field} tidak boleh kosong"]);
 
-        $nm_lengkap = $this->input->post('nm_lengkap');
-        $jenis = $this->input->post('jenis');
-        $alokasi = $this->input->post('alokasi');
+        $nm_lengkap = ucwords($this->input->post('nm_lengkap'));
+        $jenis = ucwords($this->input->post('jenis'));
+        $alokasi = ucwords($this->input->post('alokasi'));
         $total = $this->input->post('total');
         $date = date('Y-m-d');
         $time = date('H:i:s');
@@ -317,13 +315,11 @@ class Admin extends CI_Controller
 
     public function ubahPengeluaran($id_pengeluaran)
     {
-        $this->form_validation->set_rules("jenis", "jenis pembayaran", "trim|required", ["required" => "Kolom {field} tidak boleh kosong"]);
-        $this->form_validation->set_rules("alokasi", "alokasi dana", "trim|required", ["required" => "Kolom {field} tidak boleh kosong"]);
         $this->form_validation->set_rules("total", "total", "trim|required", ["required" => "Kolom {field} tidak boleh kosong"]);
 
-        $nm_lengkap = $this->input->post('nm_lengkap');
-        $jenis = $this->input->post('jenis');
-        $alokasi = $this->input->post('alokasi');
+        $nm_lengkap = ucwords($this->input->post('nm_lengkap'));
+        $jenis = ucwords($this->input->post('jenis'));
+        $alokasi = ucwords($this->input->post('alokasi'));
         $total = $this->input->post('total');
         $time = date('h:m:s');
         $status = $this->input->post('status');
@@ -475,7 +471,7 @@ class Admin extends CI_Controller
         $excel->getDefaultStyle()
             ->applyFromArray([
                 'font' => [
-                    'name' => 'Montserrat',
+                    'name' => 'Calibri',
                 ],
             ]);
 
@@ -567,8 +563,8 @@ class Admin extends CI_Controller
         $excel->getActiveSheet()->getStyle('E' . $numrow)->applyFromArray($this->setStyleExcel()['style_col']);
 
         // set Jumlah
-        $excel->getActiveSheet()->mergeCells('A' . $numrow . ':B' . $numrow);
-        $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, "JUMLAH");
+        $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, "#");
+        $excel->setActiveSheetIndex(0)->setCellValue('B' . $numrow, "JUMLAH");
         $excel->setActiveSheetIndex(0)->setCellValue('C' . $numrow, $total_debit);
         $excel->setActiveSheetIndex(0)->setCellValue('D' . $numrow, $total_kredit);
         $excel->setActiveSheetIndex(0)->setCellValue('E' . $numrow, $sisa_saldo[0]['saldo']);
@@ -590,11 +586,11 @@ class Admin extends CI_Controller
         $excel->getActiveSheet()->getStyle('D' . ($numrow + 12))->getFont()->setBold(true);
 
         // Set width kolom
-        $excel->getActiveSheet()->getColumnDimension('A')->setWidth(3.40);
-        $excel->getActiveSheet()->getColumnDimension('B')->setWidth(41.50);
-        $excel->getActiveSheet()->getColumnDimension('C')->setWidth(14.80);
-        $excel->getActiveSheet()->getColumnDimension('D')->setWidth(16.20);
-        $excel->getActiveSheet()->getColumnDimension('E')->setWidth(14.80);
+        $excel->getActiveSheet()->getColumnDimension('A')->setWidth(4.57);
+        $excel->getActiveSheet()->getColumnDimension('B')->setWidth(46.71);
+        $excel->getActiveSheet()->getColumnDimension('C')->setWidth(21.86);
+        $excel->getActiveSheet()->getColumnDimension('D')->setWidth(19.57);
+        $excel->getActiveSheet()->getColumnDimension('E')->setWidth(20.86);
 
         // Set orientasi kertas jadi LANDSCAPE
         $excel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_LANDSCAPE);
@@ -655,7 +651,7 @@ class Admin extends CI_Controller
         $excel->getDefaultStyle()
             ->applyFromArray([
                 'font' => [
-                    'name' => 'Montserrat',
+                    'name' => 'Calibri',
                 ],
             ]);
 
@@ -712,7 +708,7 @@ class Admin extends CI_Controller
         $this->setSpaceExcel($excel, $numrow);
         $numrow += 1;
 
-        // // Apply style header yang telah kita buat tadi ke masing-masing kolom header
+        // Apply style header yang telah kita buat tadi ke masing-masing kolom header
         $excel->getActiveSheet()->getStyle('A' . $numrow)->applyFromArray($this->setStyleExcel(true)['style_col']);
         $excel->getActiveSheet()->getStyle('B' . $numrow)->applyFromArray($this->setStyleExcel(true)['style_col']);
         $excel->getActiveSheet()->getStyle('C' . $numrow)->applyFromArray($this->setStyleExcel(true)['style_col']);
@@ -720,8 +716,9 @@ class Admin extends CI_Controller
         $excel->getActiveSheet()->getStyle('E' . $numrow)->applyFromArray($this->setStyleExcel(true)['style_col']);
 
         // set Jumlah
-        $excel->getActiveSheet()->mergeCells('A' . $numrow . ':C' . $numrow);
-        $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, "JUMLAH");
+        $excel->getActiveSheet()->mergeCells('B' . $numrow . ':C' . $numrow);
+        $excel->setActiveSheetIndex(0)->setCellValue('A' . $numrow, "#");
+        $excel->setActiveSheetIndex(0)->setCellValue('B' . $numrow, "JUMLAH");
         $excel->setActiveSheetIndex(0)->setCellValue('D' . $numrow, 0);
         $excel->setActiveSheetIndex(0)->setCellValue('E' . $numrow, $total_kredit);
 
@@ -729,11 +726,11 @@ class Admin extends CI_Controller
         $excel->getActiveSheet()->getStyle('E' . $numrow)->getNumberFormat()->setFormatCode(PHPExcel_Style_NumberFormat::FORMAT_ACCOUNTING_RUPIAH);
 
         // Set width kolom
-        $excel->getActiveSheet()->getColumnDimension('A')->setWidth(3.40);
-        $excel->getActiveSheet()->getColumnDimension('B')->setWidth(16.00);
-        $excel->getActiveSheet()->getColumnDimension('C')->setWidth(38.60);
-        $excel->getActiveSheet()->getColumnDimension('D')->setWidth(16.90);
-        $excel->getActiveSheet()->getColumnDimension('E')->setWidth(15.40);
+        $excel->getActiveSheet()->getColumnDimension('A')->setWidth(4.57);
+        $excel->getActiveSheet()->getColumnDimension('B')->setWidth(21.86);
+        $excel->getActiveSheet()->getColumnDimension('C')->setWidth(46.71);
+        $excel->getActiveSheet()->getColumnDimension('D')->setWidth(19.57);
+        $excel->getActiveSheet()->getColumnDimension('E')->setWidth(20.86);
 
         // Set orientasi kertas jadi LANDSCAPE
         $excel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_LANDSCAPE);

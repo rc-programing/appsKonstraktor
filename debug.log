@@ -6262,3 +6262,42 @@
 - 12:08:16.406 DEBUG: Calling CefQuitMessageLoop()
 - 12:08:16.640 INFO: Ended application
 - 12:08:16.640 INFO: --------------------------------------------------------
+- 17:54:27.031 INFO: --------------------------------------------------------
+- 17:54:27.047 INFO: Started application
+- 17:54:27.047 INFO: Logging to: G:\PROJEK\Isna Projek\appsKonstraktor\debug.log
+- 17:54:27.078 INFO: Log level = DEBUG4
+- 17:54:27.078 INFO: Starting Mongoose 3.9c web server
+- 17:54:27.078 INFO: WWW directory: G:\PROJEK\Isna Projek\appsKonstraktor\web
+- 17:54:27.078 INFO: Index files: index.html,index.php
+- 17:54:27.078 INFO: CGI interpreter: G:\PROJEK\Isna Projek\appsKonstraktor\php\php-cgi.exe
+- 17:54:27.078 INFO: CGI pattern: **.php$
+- 17:54:27.078 INFO: Hide files patterns: 
+- 17:54:27.078 DEBUG: The temp directory returned by OS contains unicode characters: C:\Users\HARIYA~1\AppData\Local\Temp\
+- 17:54:27.078 INFO: CGI environment variables set: TMP=C:\Windows\Temp,TEMP=C:\Windows\Temp,TMPDIR=C:\Windows\Temp,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 17:54:27.094 INFO: Web server url: http://127.0.0.1:54904/
+- 17:54:27.094 INFO: remote_debugging_port = 51736
+- 17:54:27.094 DEBUG: Command line string for the browser process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --remote-debugging-port=51736
+- 17:54:29.141 DEBUG: App::OnContextInitialized()
+- 17:54:29.141 DEBUG: Window max width/height = 1286/680
+- 17:54:29.141 DEBUG: GetBrowserWindow(): not found, hwnd = 394904
+- 17:54:29.141 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:54:29.187 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:54:29.187 DEBUG: StoreBrowserWindow(): hwnd = 394904
+- 17:54:30.406 DEBUG: ClientHandler::OnAfterCreated()
+- 17:54:30.406 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:54:30.422 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:54:31.000 DEBUG: Command line string for the renderer process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=renderer --no-sandbox --primordial-pipe-token=DC2AB47A9DAACCAEDFEEB86B6D3FD748 --lang=en-US --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=DC2AB47A9DAACCAEDFEEB86B6D3FD748 --renderer-client-id=3 --mojo-platform-channel-handle=2364 /prefetch:1
+- 17:54:31.000 DEBUG: Command line string for the gpu-process process: "G:\PROJEK\Isna Projek\appsKonstraktor\sipdak-app.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --disable-d3d11 --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,16,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x0046 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=8.15.10.2900 --gpu-driver-date=11-26-2012 --lang=en-US --log-file="G:\PROJEK\Isna Projek\appsKonstraktor\debug.log" --service-request-channel-token=125A95974472D315C118B7624C4003DD --mojo-platform-channel-handle=1784 /prefetch:2
+- 17:54:31.093 DEBUG: OnBrowserCreated()
+[0209/175432.091:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 17:54:33.266 DEBUG: WM_DESTROY
+- 17:54:33.266 DEBUG: RemoveBrowserWindow(): hwnd = 394904
+- 17:54:33.266 INFO: Stopping Mongoose web server
+- 17:54:33.266 DEBUG: Mongoose webserver stopped immediately
+- 17:54:33.281 DEBUG: OnBeforeClose() hwnd=1050472
+- 17:54:33.281 DEBUG: RemoveBrowserWindow(): hwnd = 1050472
+- 17:54:33.281 DEBUG: GetBrowserWindow(): not found, hwnd = 1050472
+- 17:54:33.281 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:54:33.281 DEBUG: Calling CefQuitMessageLoop()
+- 17:54:35.328 INFO: Ended application
+- 17:54:35.328 INFO: --------------------------------------------------------

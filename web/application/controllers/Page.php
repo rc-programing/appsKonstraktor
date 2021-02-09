@@ -20,19 +20,19 @@ class Page extends CI_Controller
         $total_kredit = 0;
         $sisa_saldo = 0;
         $total_pengeluaran = 0;
-        $checkDebit = $this->model_admin->getSaldo()->result_array();
         $checkSisasaldo = $this->model_admin->getSaldo(999);
-        $checkKredit = $this->model_admin->getPengeluaranTanggal($today)->result_array();
 
-        foreach ($checkDebit as $debit) {
-            if ($debit['status_saldo'] != 999) {
-                $total_debit += (int) $debit['saldo'];
-            }
+        $checkSaldo = $this->model_admin->getdata('tb_saldo', ['tgl' => $today]);
+        $checkPengeluaran = $this->model_admin->getdata('tb_pengeluaran', ['tanggal' => $today]);
+
+        if ($checkSaldo->num_rows() > 0) {
+            $row = $this->model_admin->getSUMSaldo($today)->result_array();
+            $total_debit = $row[0]['saldo'];
         }
 
-        foreach ($checkKredit as $kredit) {
-            $total_kredit += (int) $kredit['total'];
-            $total_pengeluaran++;
+        if ($checkPengeluaran->num_rows() > 0) {
+            $d = $this->model_admin->getSUMPengeluaran($today)->result_array();
+            $total_kredit = $d[0]['total'];
         }
 
         if ($checkSisasaldo->num_rows() > 0) {
